@@ -2,7 +2,6 @@
 #include <fstream>
 #include <string>
 #include <map>
-
 using namespace std;
 
 //Prototype function incorporated during development of Milestone 3
@@ -50,15 +49,12 @@ int main() {
             cout << pair.first << " " << pair.second << endl;
         }
     }
-
     cout << endl;
     //End of Milestone 2
 
     //Start of Milestone 3
     printAirportsInRange(5, 8, airportTraffic);
-
     cout << endl;
-
     printAirportsInRange(9, 12, airportTraffic);
     //End of Milestone 3
 }
