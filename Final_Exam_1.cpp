@@ -11,8 +11,7 @@ void printAirportsInRange(int low, int high, map<string, int> aT);
 int main() {
     //Start of Milestone 1
     map<string, int> airportTraffic;
-    string origin;
-    string destination;
+    string origin, destination;
 
     ifstream fin("210-final-1-FA25.txt");
     
@@ -59,7 +58,7 @@ int main() {
     printAirportsInRange(5, 8, airportTraffic);
 
     cout << endl;
-    
+
     printAirportsInRange(9, 12, airportTraffic);
     //End of Milestone 3
 }
