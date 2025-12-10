@@ -6,6 +6,7 @@
 using namespace std;
 
 int main() {
+    //Start of Milestone 1
     map<string, int> airportTraffic;
     string origin;
     string destination;
@@ -28,4 +29,24 @@ int main() {
     for (const auto& pair : airportTraffic) {
         cout << pair.first << " " << pair.second << endl;
     }
+
+    cout << endl;
+    //End of Milestone 1
+
+    //Start of Milestone 2
+    int maxTraffic = 0;
+
+    for (const auto& pair : airportTraffic) {
+        if (maxTraffic < pair.second) {
+            maxTraffic = pair.second;
+        }
+    }
+
+    cout << "Busiest airport(s) with count " << maxTraffic << ":\n";
+    for (const auto& pair : airportTraffic) {
+        if (pair.second == maxTraffic) {
+            cout << pair.first << " " << pair.second << endl;
+        }
+    }
+    //End of Milestone 2
 }
